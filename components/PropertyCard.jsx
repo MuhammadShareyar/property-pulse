@@ -9,16 +9,16 @@ import {
 } from "react-icons/fa";
 
 const PropertyCard = ({ property }) => {
-    const getRateDisplay = () => {
-      const { rates } = property;
-      if (rates.monthly) {
-        return `$${rates.monthly.toLocaleString()}/mo`;
-      } else if (rates.weekly) {
-        return `$${rates.weekly.toLocaleString()}/wk`;
-      } else if (rates.nightly) {
-        return `$${rates.nightly.toLocaleString()}/night`;
-      }
-    };
+  const getRateDisplay = () => {
+    const { rates } = property;
+    if (rates.monthly) {
+      return `$${rates.monthly.toLocaleString()}/mo`;
+    } else if (rates.weekly) {
+      return `$${rates.weekly.toLocaleString()}/wk`;
+    } else if (rates.nightly) {
+      return `$${rates.nightly.toLocaleString()}/night`;
+    }
+  };
 
   return (
     <div className="rounded-xl shadow-md relative">
@@ -41,15 +41,15 @@ const PropertyCard = ({ property }) => {
 
         <div className="flex justify-center gap-4 text-gray-500 mb-4">
           <p>
-            <FaBed className='md:hidden lg:inline' /> {property.beds}
+            <FaBed className="md:hidden lg:inline" /> {property.beds}
             <span className="md:hidden lg:inline">Beds</span>
           </p>
           <p>
-            <FaBath className='md:hidden lg:inline' /> {property.baths}
+            <FaBath className="md:hidden lg:inline" /> {property.baths}
             <span className="md:hidden lg:inline">Baths</span>
           </p>
           <p>
-            <FaRulerCombined className='md:hidden lg:inline' />
+            <FaRulerCombined className="md:hidden lg:inline" />
             {property.square_feet}{" "}
             <span className="md:hidden lg:inline">sqft</span>
           </p>
@@ -57,10 +57,10 @@ const PropertyCard = ({ property }) => {
 
         <div className="flex justify-center gap-4 text-green-900 text-sm mb-4">
           <p>
-            <FaMoneyBill className='md:hidden lg:inline' /> Weekly
+            <FaMoneyBill className="md:hidden lg:inline" /> Weekly
           </p>
           <p>
-            <FaMoneyBill className='md:hidden lg:inline' /> Monthly
+            <FaMoneyBill className="md:hidden lg:inline" /> Monthly
           </p>
         </div>
 
@@ -72,7 +72,7 @@ const PropertyCard = ({ property }) => {
             <span className="text-orange-700"> {property.location.street}</span>
           </div>
           <Link
-            href="property.html"
+            href={`properties/${property._id}`}
             className="h-[36px] bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Details
