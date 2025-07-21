@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const PropertyImages = ({images}) => {
   return (
-    <section class="bg-blue-50 p-4">
-      <div class="container mx-auto">
+    <section className="bg-blue-50 p-4">
+      <div className="container mx-auto">
         {images.length === 1 ? (
           <Image
             src={images[0]}
@@ -22,7 +22,7 @@ const PropertyImages = ({images}) => {
                   alt=""
                   width={1800}
                   height={400}
-                  class="object-cover h-[400px] w-full rounded-xl cursor-pointer"
+                  className="object-cover h-[400px] w-full rounded-xl cursor-pointer"
                 />
               </div>
             ))}
