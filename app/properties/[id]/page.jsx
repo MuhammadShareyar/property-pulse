@@ -1,4 +1,5 @@
 import BookmarkButton from "@/components/BookmarkButton";
+import PropertyContactForm from "@/components/PropertyContactForm";
 import PropertyDetails from "@/components/PropertyDetails";
 import PropertyHeaderImage from "@/components/PropertyHeaderImage";
 import PropertyImages from "@/components/PropertyImages";
@@ -50,6 +51,7 @@ const PropertyPage = async ({ params }) => {
             <aside className="space-y-4">
               <BookmarkButton property={property} />
               <ShareButtons property={property} />
+              <PropertyContactForm property={property} />
             </aside>
           </div>
         </div>
