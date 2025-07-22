@@ -11,13 +11,13 @@ const SavedPropertiesPage = async () => {
   await connectDB();
 
   return (
-    <section class="px-4 py-6">
-      <div class="container-xl lg:container m-auto px-4 py-6">
-        <h1 class="text-3xl font-bold mb-6">Your Saved Properties</h1>
+    <section className="px-4 py-6">
+      <div className="container-xl lg:container m-auto px-4 py-6">
+        <h1 className="text-3xl font-bold mb-6">Your Saved Properties</h1>
         {bookmarks.length === 0 ? (
-          <p class="text-gray-500">You have no saved properties.</p>
+          <p className="text-gray-500">You have no saved properties.</p>
         ) : (
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {bookmarks.map((property) => (
               <PropertyCard key={property._id} property={property} />
             ))}
