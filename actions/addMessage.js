@@ -16,9 +16,9 @@ const addMessage = async (previousState,formData) => {
   const { userId } = sessionUser;
   const recipient = formData.get("recipient");
 
-  //   if (userId === recipient) {
-  //    return{error:"You cannot send a message to yourself"};
-  //   }
+    if (userId === recipient) {
+     return{error:"You cannot send a message to yourself"};
+    }
 
   const messageData = {
     sender: userId,
