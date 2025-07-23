@@ -2,9 +2,6 @@
 
 > A web application to help you find your next rental property.
 
-This is the old version of the app that uses API routes for properties, messaging, etc. The current/latest version of the courses uses server actions. The updated code can be found [here](https://github.com/bradtraversy/property-pulse-nextjs) as well as in the [refactor branch](https://github.com/bradtraversy/property-pulse/tree/refactor).
-
-
 ## Features
 
 Here are some of the current features that Property Pulse has:
